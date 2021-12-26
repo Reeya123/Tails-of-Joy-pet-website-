@@ -1,0 +1,262 @@
+* {
+  font-family: verdana;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.slide-container {
+  width: 966px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+}
+.image-container {
+  width: 1330px;
+  height: 500px;
+  position: relative;
+  transition: left 2s;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+}
+.slider-image {
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+.button-container {
+  top: -20px;
+  position: relative;
+  padding-left: 50px;
+}
+.slider-button {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: #140033;
+}
+#slider-image-1:target ~ .image-container {
+  left: 0px;
+}
+#slider-image-2:target ~ .image-container {
+  left: -330px;
+}
+#slider-image-3:target ~ .image-container {
+  left: -660px;
+}
+#slider-image-4:target ~ .image-container {
+  left: -990px;
+}
+
+nav ul ul {
+  display: none;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul {
+  /*background: #000000;
+  opacity: 0.9;*/
+  display: flex;
+  position: relative;
+  list-style: none;
+  padding: 0 20px;
+  padding-top: 10px;
+}
+nav ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+nav ul li {
+  float: left;
+}
+nav ul li:hover {
+  background: #8123ec;
+  opacity: 20;
+}
+nav ul li:hover a {
+  color: #ffffff;
+}
+nav ul li a {
+  display: block;
+  padding: 5px 20px;
+  color: #000000;
+  text-decoration: none;
+}
+nav ul ul {
+  background: #8123ec;
+  border-radius: 0px;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+}
+nav ul ul li {
+  float: none;
+  border-top: 1px solid #8123ec;
+  border-bottom: 1px solid #8123ec;
+  position: relative;
+}
+nav ul ul li a {
+  padding: 15px 40px;
+  color: rgb(255, 255, 255);
+}
+nav ul ul li a:hover {
+  background: #6510c5;
+}
+
+.registerbox {
+  width: 50%;
+  margin-left: 300px;
+  padding-left: 10%;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+input[type="text"],
+select {
+  width: 40%;
+  background-color: #efe3ff;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="email"],
+select {
+  width: 40%;
+  background-color: #efe3ff;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="date"],
+select {
+  width: 40%;
+  padding: 12px 20px;
+  background-color: #efe3ff;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  width: 40%;
+  background-color: #754bc2;
+  color: white;
+  padding: 12px;
+  border: none;
+  margin-left: 20%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="password"],
+select {
+  width: 40%;
+  padding: 12px 20px;
+  background-color: #efe3ff;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="submit"]:hover {
+  background-color: #5a02ad;
+}
+input[type="number"] {
+  background-color: #efe3ff;
+}
+textarea {
+  background-color: #efe3ff;
+}
+
+footer {
+  bottom: 0px;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.9;
+  color: #d9d9d9;
+}
+.main-content {
+  display: flex;
+}
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content {
+  margin: 20px 0 0 0;
+}
+.left .content p {
+  text-align: justify;
+}
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+.left .content .social a {
+  padding: 0 2px;
+}
+.left .content .social a span {
+  height: 40px;
+  width: 40px;
+  color: #8123ec;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.left .content .social a span:hover {
+  background: #8123ec;
+  color: #000000;
+}
+button {
+  padding: 10px 20px;
+  background-color: #ad65f0;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+}
+
+.HeaderBox {
+  height: 68px;
+  width: 100%;
+  /*position: fixed;
+  opacity: 0.9;
+  background: #000000;*/
+}
+.titlebar {
+  float: right;
+}
+
+#dec {
+  width: 25px;
+}
+#inc {
+  width: 25px;
+}
+
+/*petad*/
+.whitebox {
+  background-color: #efe3ff;
+  display: inline-block;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  padding: 20px;
+  border-radius: 6px;
+  width: 400px;
+  height: 650px;
+}

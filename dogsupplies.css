@@ -1,0 +1,145 @@
+* {
+  font-family: verdana;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.HeaderBox {
+  height: 68px;
+  width: 100%;
+  /*position: fixed;
+  opacity: 0.9;
+  background: #000000;*/
+}
+.titlebar {
+  float: right;
+}
+
+.line1 figure {
+  display: inline-block;
+}
+.line1 figcaption {
+  color: #8123ec;
+  text-align: center;
+  font-size: 1.4em;
+}
+.line2 figure {
+  display: inline-block;
+}
+.line2 figcaption {
+  color: #8123ec;
+  text-align: center;
+  font-size: 1.4em;
+}
+nav ul ul {
+  display: none;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul {
+  /*background: #000000;
+  opacity: 0.9;*/
+  display: flex;
+  position: relative;
+  list-style: none;
+  padding: 0 20px;
+  padding-top: 10px;
+}
+nav ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+nav ul li {
+  float: left;
+}
+nav ul li:hover {
+  background: #8123ec;
+  opacity: 20;
+}
+nav ul li:hover a {
+  color: #ffffff;
+}
+nav ul li a {
+  display: block;
+  padding: 5px 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+nav ul ul {
+  background: #8123ec;
+  border-radius: 0px;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+}
+nav ul ul li {
+  float: none;
+  border-top: 1px solid #8123ec;
+  border-bottom: 1px solid #8123ec;
+  position: relative;
+}
+nav ul ul li a {
+  padding: 15px 40px;
+  color: rgb(255, 255, 255);
+}
+nav ul ul li a:hover {
+  background: #6510c5;
+}
+
+footer {
+  bottom: 0px;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.9;
+  color: #d9d9d9;
+}
+.main-content {
+  display: flex;
+}
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content {
+  margin: 20px 0 0 0;
+}
+.left .content p {
+  text-align: justify;
+}
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+.left .content .social a {
+  padding: 0 2px;
+}
+.left .content .social a span {
+  height: 40px;
+  width: 40px;
+  color: #8123ec;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.left .content .social a span:hover {
+  background: #8123ec;
+  color: #000000;
+}
+button {
+  padding: 10px 20px;
+  background-color: #ad65f0;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  width: 30%;
+}
